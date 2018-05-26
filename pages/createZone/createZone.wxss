@@ -1,0 +1,47 @@
+/* pages/createZone/createZone.wxss */
+.createBar{
+  width:100%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.v{
+  margin:0 auto;
+  display: flex;
+  flex-direction: row
+}
+.txt{
+  display: block;
+  margin:0 auto;
+}
+.inputView{
+    /*边界：大小1px, 为固体，为绿色*/
+    border:  1px solid gray; 
+    /*边界角的弧度*/
+    border-radius: 10rpx;
+    margin-top:100rpx;
+    margin:0 auto;
+}
+.buttonSet{
+  width:80%;
+  display: flex;
+  flex-direction: row;
+  margin:10rpx;
+}
+.but1{
+  width:50%;
+  height:90rpx;
+  line-height:90rpx;
+  border:  1px solid #aaa; 
+  
+}
+.but2{
+  height:90rpx;
+   width:50%;
+  text-align:center;
+  line-height:90rpx;
+  background-color:#2796f2;
+  color:white
+}

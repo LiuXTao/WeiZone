@@ -1,0 +1,44 @@
+/* pages/companyManage/companyManage.wxss */
+.manageBar{
+  width:100%;
+  height:30px;
+  background:#E0E0E0;
+}
+
+.barZiti{
+  height:30px;
+  line-height:30px; 
+  font-size:30rpx; 
+  color:#ADADAD;
+  margin-left:5%;
+}
+
+.nav-item{
+  width:100%;
+  height:100rpx;
+  border-bottom:1px solid  #eee;
+  line-height:100rpx;
+  display: flex;
+  align-items: center;
+}
+
+.touxiang{
+  border-radius: 50%;
+  width:70rpx;
+  height:70rpx;
+  float: left;
+  margin-left: 3%;
+}
+
+.name{
+  font-size: 29rpx;
+  float: left;
+  margin-left: 2%;
+}
+
+.manager{
+  position:absolute;
+  right:3%;
+  font-size: 29rpx;
+  color:#C1CDCD;
+}

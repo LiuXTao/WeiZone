@@ -1,0 +1,107 @@
+/* pages/Album/Album.wxss */
+page{  
+  display: flex;  
+  flex-direction: column;  
+  height: 100%;  
+}  
+.main{
+  width:100%;
+  margin-bottom: 80rpx
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+} 
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff;  
+}  
+.navbar .item{  
+  position: relative;  
+  flex: auto;  
+  text-align: center;  
+  line-height: 80rpx;  
+}  
+.navbar .item.active{  
+  color:#0080FF;  
+}  
+.navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background:#0080FF;  
+}  
+.manageBar{
+  width:100%;
+  height:30px;
+  background:#E0E0E0;
+}
+.barZiti{
+  height:30px;
+  line-height:30px; 
+  font-size:27rpx; 
+  color:#ADADAD;
+  margin-left:5%;
+}
+.manage{
+  float:right;
+  margin-right:20rpx;
+  font-size: 32rpx;
+  color:#2894FF;
+}
+.allAlbum{
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap; 
+  width:100%;
+  align-content:flex-start;    
+    
+}
+.circle{
+  width:23px;
+  height: 23px;
+  -moz-border-radius: 11.5px;
+  -webkit-border-radius: 11.5px;
+  border-radius: 11.5px;
+  position:absolute;
+  
+  top:0px;
+  right:10%;
+}
+.bar{
+  width:40%;
+  height:30%;
+  margin-top:6%;  
+  margin-left:6%; 
+}
+.bar-set{
+  width:100%;
+  height:100%;
+  position:relative;
+}
+.ver{
+  width:90%;
+  height:90%;
+  
+}
+.albumZiti{
+  margin-left:20%;
+  font-size:35rpx;
+  font-weight:normal;
+}
+.smallTab{
+  position:fixed;
+  bottom:0
+}
+
+.inputName{
+  background:#F0F0F0;
+  margin: 5rpx;
+  border-radius: 5rpx;
+}

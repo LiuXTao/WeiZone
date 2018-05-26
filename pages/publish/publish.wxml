@@ -1,0 +1,24 @@
+<view class="page">
+  <view class="publish-box">
+    <form bindsubmit="formSubmit">
+      <view class="form-group">
+        <textarea maxlength="300" auto-height name="desc" value="{{formData.desc}}" bindinput="descInput" placeholder="添加描述" />
+      </view>
+      <view class="form-photo-group">
+        <block wx:if="{{formData.photos.length > 0}}">
+          <view wx:for="{{formData.photos}}" wx:key="index"class="photo-preview">
+            <image mode="aspectFill" class="photo" src="{{item.url}}"></image>
+            <view class="del-btn" catchtap="remove" data-id="{{index}}"></view>
+          </view>
+        </block>
+        <view wx:if="{{formData.photos.length <9}}" class="plus photo-preview" bindtap="selectPhoto"></view>
+      </view>
+      <view class="form-submit-group">
+        <view class="submit-btn" hover-class="btnHover">
+          <button form-type="submit"></button>
+          <text>立即上传</text>
+        </view>
+      </view>
+    </form>
+  </view>
+</view>

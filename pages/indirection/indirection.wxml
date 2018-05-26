@@ -1,0 +1,12 @@
+<!--pages/indirection/indirection.wxml-->
+<view class="main">
+  <block wx:for="{{question}}">
+    <view class="indir">
+      <image class="nav-icon" mode="widthFix" src="../../image/dialog.png"></image>
+      <view class="indir-sub">
+        <text class="indir-question">{{item.que}}</text>
+        <text class="indir-answer">{{item.ans}}</text>
+      </view>
+    </view>
+  </block>
+</view>

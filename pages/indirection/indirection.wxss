@@ -1,0 +1,28 @@
+/* pages/indirection/indirection.wxss */
+
+.nav-icon{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.indir{
+  display:flex;
+  flex-direction: row;
+  margin-top:30rpx;
+  border-bottom:1px solid #F0F8FF;
+}
+.indir-sub{
+  display:flex;
+  flex-direction: column;
+
+  margin-bottom:20rpx;
+}
+.indir-question{
+  font-size:35rpx;
+  color:#000000;
+  font-weight: normal
+}
+.indir-answer{
+  font-size:25rpx;
+  color:#8A8A8A;
+}

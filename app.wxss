@@ -1,0 +1,18 @@
+/**app.wxss**/
+@import "./pages/tab/tab.wxss";
+@import "./pages/madal/madal.wxss";
+@import "./pages/smalltab/smalltab.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+#select{
+  position:fixed;
+  bottom:0
+}
+ 

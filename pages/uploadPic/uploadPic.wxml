@@ -1,0 +1,24 @@
+<!--pages/uploadPic/uploadPic.wxml-->
+<view style="width:{{imageWidth}}px,height:{{screenHeight}}px">
+ <view class="manageBar">
+  <view class="barZiti">
+  <view class="manage" bindtap="manage">{{opeName}}</view>
+  </view>
+ </view> 
+<view hidden="{{currentTab!==0}}" class="allPicture" style="height:{{screenHeight*0.8}}px">  
+  <block wx:for="{{pictures}}"  wx:for-item="item" data-reply-Type="id">
+    <view class="bar">
+      <view class="bar-set" >
+        <image src="{{item.src}}" class="ver"  data-index='{{index}}' bindtap='previewImage'></image> 
+        <icon class="circle" hidden="{{openFlag}}" id="{{item.id}}" bindtap="select" type="{{item.radioType}}" style="background:{{item.seleColor}} " size="23"/> 
+      </view>
+    </view>
+  </block>
+</view>
+<button size="mini" class="upload" bindtap="upload" hidden="{{!openFlag}}"><span class="upZiti">上传图片</span></button>
+  <import src="../smalltab/smalltab"/>
+  <view class="smallTab" hidden="{{openFlag}}">
+    <template is="smalltab" data="{{...small}}"/>
+  </view>
+
+</view>

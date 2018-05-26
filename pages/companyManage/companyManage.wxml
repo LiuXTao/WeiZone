@@ -1,0 +1,14 @@
+<!--pages/companyManage/companyManage.wxml-->
+<view class="main" style="width:{{ screenWidth}}px;height:{{ screenHeight}}px">
+   <view class="manageBar">
+    <view class="barZiti">空间成员(点击编辑权限)</view> 
+  </view>
+  <block wx:for="{{members}}" wx:for-index="idx">
+    <view class="nav-item" id="{{idx}}" bindtap='manage'>
+      <image class="touxiang" src="{{item.src}}"></image>
+      <view class="name">{{item.name}}</view>
+      <view class="manager" >{{item.manager}}</view>
+    </view>
+  </block>
+
+</view>

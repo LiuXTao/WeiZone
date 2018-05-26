@@ -1,0 +1,84 @@
+/* pages/ZoneDetail/ZoneDetail.wxss */
+.manageBar{
+  width:100%;
+  height:30px;
+  background:#E0E0E0;
+}
+
+.barZiti{
+  height:30px;
+  line-height:30px; 
+  font-size:30rpx; 
+  color:#ADADAD;
+  margin-left:5%;
+}
+.nav-item{
+  width:100%;
+  height:100rpx;
+  border-bottom:1px solid  #eee;
+}
+.nav-items{
+  width:100%;
+  height:125rpx;
+  border-bottom:1px solid  #eee;
+}
+.des{
+   height:100rpx;
+   line-height: 100rpx;
+  float: left;
+  margin-left:3%;
+font-size:33rpx;
+}
+.dess{
+   height:100rpx;
+   line-height: 125rpx;
+  float: left;
+  margin-left:3%;
+  font-size:33rpx;
+}
+.name{
+  float: left;
+   height:100rpx;
+   line-height: 100rpx;
+    margin-left:40rpx;
+  color:#C7C7C7;
+}
+.modify{
+   height:100rpx;
+   line-height: 100rpx;
+  float:right;
+  margin-right:2%;
+  font-size:33rpx;
+    color:#2894FF;
+}
+.modifys{
+   height:125rpx;
+   line-height: 125rpx;
+  float:right;
+  margin-right:2%;
+  font-size:33rpx;
+    color:#2894FF;
+}
+.inputName{
+  background:#F0F0F0;
+  margin: 5rpx;
+  border-radius: 5rpx;
+}
+
+.ZonePho{
+  float: right;
+  width: 120rpx;
+  height: 120rpx;
+  margin-right:20rpx;
+  border-radius: 50%;
+}
+.change{
+ 
+  float:right;
+  margin-top:35rpx;
+  margin-right:10rp;
+  width:70rpx;
+  height:60rpx;
+}
+
+

@@ -1,0 +1,8 @@
+
+<template name="smalltab">
+  <view class="smalltab" bindtap="switchtab">
+    <view class="small-cancel" bindtap="cancel" id="11">取消</view> 
+    <view class="seleNum" >已选择{{selectNum}}</view>
+    <view class="small-delete" bindtap="delete" id="22">删除</view>
+  </view>
+</template>

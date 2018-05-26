@@ -1,0 +1,22 @@
+<!--pages/tab/tab.wxml-->
+<template name="tab">
+<view class="tab" bindtap="switchtab">
+  <view class="Icon" >
+    <view>
+     <image src="{{src1}}" class="p1"  id="1"></image>
+     <view class="tabZitiw" style="color:{{color1}};">{{title1}}</view>
+  </view>
+  </view>
+   <view class="Icon">
+     <view>
+     <image src="{{src2}}" class="p"  id="2"></image>
+  </view>
+  </view>
+  <view class="Icon">
+     <view >
+      <image src="{{src3}}" class="p1"  id="3"></image>
+      <view class="tabZiti" style="color:{{color3}};">{{title3}}</view>
+    </view>
+  </view> 
+</view>
+</template>

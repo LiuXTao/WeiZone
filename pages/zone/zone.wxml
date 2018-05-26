@@ -1,0 +1,35 @@
+<!--pages/zone/zone.wxml-->
+<view class="container">
+
+  <import src="../madal/madal.wxml"/>
+  <template is="madals" data="{{..._datas}}"/> 
+  
+  <view class="zone-container" > 
+    <view class="b1">
+       <image src="../../image/erweima.png" class="erweima" bindtap="codeGenergate"></image>  
+      <view class="b1-subtitle" bindtap="openDetail">
+          <view class="logo">
+            <image src="{{Zonepho}}" class="logo"></image>
+          </view>
+      </view> 
+      <view class="wow" bindtap="openDetail">{{zone_name}}({{zoneMembers}}人)</view>
+      <view class="RoomID">{{id}}</view>
+    </view>
+     
+   </view>  
+   <view class="functionBar">
+      <block wx:for="{{barlist}}" wx:for-index="id" wx:for-item="itemName" data-reply-Type="id">
+        <view class="bar">
+            <view id="{{itemName.id}}" bindtap='open'>
+              <image src="{{itemName.src}}" class="funPic"></image>
+              <view class="ziti">{{itemName.label}}</view>
+            </view>
+          
+        </view>
+      </block>
+   </view>    
+  <import src="../tab/tab"/>
+    <view id="select">
+    <template is="tab" data="{{..._tabData}}"/>
+  </view>    
+</view>

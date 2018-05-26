@@ -1,0 +1,39 @@
+/* pages/tab/tab.wxss */
+.tab{
+  display: flex;
+  flex-direction: row;
+  background:white;
+  width:750rpx;
+  height:130rpx;
+  border-top:1px solid #E0E0E0	
+}
+
+.Icon{
+  width:33%;
+  height:100%;
+  margin-left:30rpx;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.p{
+  width:100rpx;
+  height:100rpx
+}
+.p1{
+  width:30px;
+  height:30px;
+}
+.tabZitiw{
+  font-size: 27rpx;
+  color:#bfbfbf; 
+  position:relative;
+  left:-6rpx;
+}
+.tabZiti{
+  font-size: 27rpx;
+  color:#bfbfbf; 
+  position:relative;
+  left:-20rpx;
+}

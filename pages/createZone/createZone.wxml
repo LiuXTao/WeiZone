@@ -1,0 +1,14 @@
+<!--pages/createZone/createZone.wxml-->
+<view class="main">
+  <view class="createBar">
+    <view class="v">
+    
+      空间名：<input name='zoneName' class="inputView" bindtap="bindFocus" bindinput='setname' placeholder="请输入空间名" focus="{{focus}}"/>
+    </view>
+
+    <view class="buttonSet" >
+      <button class="but1" bindtap="back">返回</button>
+        <button class="but2" bindtap="sure" open-type='share'>确定</button>        
+    </view>
+  </view>
+</view>

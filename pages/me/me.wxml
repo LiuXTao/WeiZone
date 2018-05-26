@@ -1,0 +1,53 @@
+<!--pages/me/me.wxml-->
+<view class="page" style="width:{{imageWidth}}px,height:{{screenHeight}}px">
+<import src="../madal/madal.wxml"/>
+  <template is="madals" data="{{..._datas}}"/>
+  <view class="user-base" style="height:{{screenHeight*0.25}}px">
+    <view class="user-info">
+      <image class="userinfo-avatar" mode="aspectFill" src="{{userInfo.avatarUrl}}"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    
+  </view>
+  <view class="user-nav">
+    <view class="nav-group">
+    <view class="nav-item">
+        <navigator url="../Album/Album">
+          <image class="nav-icon" mode="widthFix" src="../../image/pic1.png"></image>
+          <text>我的相册</text>
+        </navigator>
+      </view>
+      <view class="nav-item">
+        <navigator url="../Album/Album">
+          <image class="nav-icon" mode="widthFix" src="../../image/pic2.png"></image>
+          <text>我的视频</text>
+        </navigator>
+      </view>
+      <view class="nav-item">
+        <navigator url="../Album/Album">
+          <image class="nav-icon" mode="widthFix" src="../../image/pic3.png"></image>
+          <text>我的文件</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="nav-group">
+      <view class="nav-item">
+        <navigator url="../feedback/feedback">
+          <image class="nav-icon" mode="widthFix" src="../../image/circle.png"></image>
+          <text>意见反馈</text>
+        </navigator>
+      </view>
+      <view class="nav-item">
+        <navigator url="../indirection/indirection">
+          <image class="nav-icon" mode="widthFix" src="../../image/circle.png"></image>
+          <text>常见问题</text>
+        </navigator>
+      </view>
+       </view>
+  </view>
+   
+  <import src="../tab/tab"/>
+  <view id="select">
+    <template is="tab" data="{{..._tabData}}"/>
+  </view>    
+</view>

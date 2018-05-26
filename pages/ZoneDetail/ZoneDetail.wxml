@@ -1,0 +1,26 @@
+<!--pages/ZoneDetail/ZoneDetail.wxml-->
+<view class="main" style="width:{{screenWidth}}px;height:{{screenHeight}}px">
+   <view class="manageBar">
+    <view class="barZiti">空间信息</view> 
+  </view>
+  <modal hidden="{{nameFlag}}" title="修改微空间名" confirm-text="确认" cancel-text="取消" bindconfirm="lisconfirm" bindcancel="liscancel" style=" confirmColor:#5CACEE">
+      <input class="inputName" type="text" bindinput="bindinput" focus="{{!nameFlag}}"/>
+  </modal>
+
+ <view class="nav-item">
+    <view class="des" >空间名</view>
+    <view class="name">{{ZoneName}}</view>
+    <view class="modify" bindtap="modifyName">修改</view>
+  </view>
+   <view class="nav-items">
+    <view class="dess" >空间头像</view>
+   
+    <image src="{{change}}" class="change" bindtap="changPho"></image>
+     <image src="{{Zonepho}}" class="ZonePho"></image>
+  </view>
+   <view class="nav-item">
+    <view class="des" >空间成员</view>
+    <view class="modify" bindtap="findCompanies">查看</view>
+  </view>
+
+</view>

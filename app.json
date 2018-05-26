@@ -1,0 +1,22 @@
+{
+  "pages":[
+
+    "pages/enter/enter",
+    "pages/companyManage/companyManage",
+    "pages/Album/Album",
+    "pages/zone/zone",
+    "pages/createZone/createZone",
+    "pages/indirection/indirection",
+    "pages/uploadPic/uploadPic",
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/me/me",
+    "pages/ZoneDetail/ZoneDetail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微空间",
+    "navigationBarTextStyle":"black"
+  }
+}

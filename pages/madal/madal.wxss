@@ -1,0 +1,58 @@
+.bg {  
+  display: none;  
+  position: absolute;  
+  top: 0%;  
+  left: 0%;  
+  width: 100%;  
+  height: 100%;  
+   background-color: white;   
+  z-index: 1001;  
+  -moz-opacity: 0.6;  
+  opacity: 0.97;  
+  filter: alpha(opacity=50);
+    
+}  
+.par{
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.funBar{
+  width:80%; 
+  height:80%;
+  position:relative;
+  top:-200rpx;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.bar{
+  width:33%;
+  height:100%;
+  padding-left: 10rpx;
+  display:flex;
+  justify-content: center;
+  align-items: center; 
+}
+.pic1{
+  width:100rpx;
+  height:100rpx;
+}
+.madlZiti{
+  font-size: 30rpx;
+  color:black;
+  position:relative;
+  left:-8rpx;
+  top:3rpx;
+}
+.cancel{
+  position:absolute;
+  bottom:50rpx;
+
+}
+.cross{
+  width:40rpx;
+  height:40rpx;
+}

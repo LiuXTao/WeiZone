@@ -1,0 +1,32 @@
+.smalltab{
+  display: flex;
+  flex-direction: row;
+  background:white;
+  width:750rpx;
+  height:80rpx;
+  border-top:1px solid #bfbfbf
+}
+.small-cancel{
+  height:80rpx;
+  line-height:70rpx;
+  float:left;
+  margin:0 15rpx 0 15rpx ;
+  font-size:38rpx;
+  color:#3C3C3C;
+}
+.small-delete{
+  height:80rpx;
+  line-height:70rpx;
+  float:right;
+  margin:0 15rpx 0 15rpx ;
+  font-size:35rpx;
+  color:#FF2D2D	;
+}
+
+.seleNum{
+  height:80rpx;
+  line-height:70rpx;
+  margin:0 auto;
+  font-size:25rpx;
+  color:#9D9D9D	;
+}

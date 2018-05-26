@@ -1,0 +1,19 @@
+<template name="madals">
+  <view class="bg" style='display:{{display}}'>
+  <view class="par">
+    <view class="funBar">  
+      <block wx:for="{{funBar}}" wx:for-index="id" wx:for-item="itemName" data-reply-Type="id">
+          <view class="bar">
+              <view id="{{itemName.id}}" bindtap='open' bindtap='openTheFile'>
+                <image src="{{itemName.src}}" class="pic1"></image>
+                <view class="madlZiti">{{itemName.label}}</view>
+              </view>
+           </view>
+       </block>    
+      </view>
+      <view class="cancel">
+        <image class="cross" src="../../image/cross.png" bindtap='hideview'/>
+      </view>
+    </view>
+    </view>
+</template>

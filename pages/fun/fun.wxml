@@ -1,0 +1,10 @@
+<!--pages/fun/fun.wxml-->
+<view>
+  <import src="../madal/madal.wxml"/>
+  <template is="madals" data="{{..._datas}}"/>
+  
+  <import src="../tab/tab"/>
+  <view id="select">
+    <template is="tab" data="{{..._tabData}}"/>
+  </view>    
+</view>

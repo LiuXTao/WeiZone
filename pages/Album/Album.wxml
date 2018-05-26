@@ -1,0 +1,49 @@
+<!--pages/Album/Album.wxml-->
+<view style="width:{{imageWidth}}px,height:{{screenHeight}}px">
+<scroll-view  class="main" scroll-y style="height:{{screenHeight}}px">
+  <modal hidden="{{hidden}}" title="{{title}}" confirm-text="确认" cancel-text="取消" bindconfirm="{{sure}}" bindcancel="liscancel" style=" confirmColor:#46A3FF">
+      <input class="inputName" type="text" bindinput="bindinput" focus="{{!hidden}}"/>
+  </modal>
+ <view class="navbar">  
+  <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>  
+  </view>  
+  <view class="manageBar">
+    <view class="barZiti">转发此页面到任意群,可创建空间相册
+    <view class="manage" bindtap="manage">{{opeName}}</view>
+    </view>
+  </view> 
+  
+<!--全部相册-->  
+<view hidden="{{currentTab!==0}}" class="allAlbum" style="height:{{screenHeight*0.8}}px">  
+  <block wx:for="{{albums}}" wx:for-index="id" wx:for-item="item" data-reply-Type="id">
+    <view class="bar">
+    <!-- <block wx:if="{{item.id==1}}"> -->
+    <block wx:if="{{item.id==0}}"> <!--GYB_modify-->
+      <view id="{{item.id}}" bindtap='createAlbum'class="bar-set">
+        <image src="{{item.src}}" class="ver"></image> 
+        <view class="albumZiti">{{item.des}}</view>
+      </view>
+    </block>
+    <block wx:else>
+      <view id="{{item.id}}" bindtap='openAlbum'class="bar-set">
+         <!-- <image src="{{item.src1}}" class="circle"></image>  -->
+        
+        <image src="{{item.src}}" class="ver"></image> 
+        <view class="albumZiti">{{item.des}}</view>
+        <icon class="circle" hidden="{{openFlag}}" id="{{item.id}}" bindtap="select" type="{{item.radioType}}" style="background:{{item.seleColor}} " size="23"/>
+      </view>
+    </block>
+    </view>
+  </block>
+</view>  
+</scroll-view>
+<!--我的相册-->  
+<view hidden="{{currentTab!==1}}">  
+  tab_02  
+</view>  
+  
+  <import src="../smalltab/smalltab"/>
+  <view class="smallTab" hidden="{{openFlag}}">
+    <template is="smalltab" data="{{...small}}"/>
+  </view>
+</view>
